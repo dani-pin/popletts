@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poplett's Dog Grooming</title>
+  <link rel="stylesheet" href="shared.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="shared.js" defer></script>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <nav class="site-nav-primary">
+    <div class="container site-nav-container">
+      <img class="site-nav-logo" src="images/popletts-dog-grooming-logo.png" alt="Poplett's Dog Grooming logo">
+
+      <div class="site-nav-links">
+        <a class="site-nav-link" href="#our-services">Services</a>
+        <a class="site-nav-link" href="about-me.html">About</a>
+        <a class="site-nav-link" href="#site-footer">Contact</a>
+        <a href="tel:+447713345389" class="btn-secondary site-nav-btn">Call 07713345389</a>
+      </div>
+
+      <button id="site-nav-hamburger" class="site-nav-hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+          <path d="M4 18L20 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M4 12L20 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M4 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-site-nav">
+      <a class="mobile-site-nav-link" href="#our-services">Services</a>
+      <a class="mobile-site-nav-link" href="about-me.html">About</a>
+      <a class="mobile-site-nav-link" href="#site-footer">Contact</a>
+      <a href="tel:+447713345389" class="btn-secondary mobile-site-nav-btn">Call 07713345389</a>
+
+      <button id="mobile-site-nav-close" class="mobile-site-nav-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+          <path d="M19 5L5 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-header">
+        <h1 class="h1">Your dog, our priority!</h1>
+        <p class="subheading">
+          With expert grooming and a loving touch, we make sure your pup leaves looking great and feeling even better.
+        </p>
+        <a href="https://wa.me/+573143687108" class="btn-primary">Schedule a visit</a>
+      </div>
+    </section>
+
+    <section class="why-people-love-us section">
+      <div class="why-people-love-us-header container-small">
+        <h2 class="h2">Why people love us</h2>
+        <p class="subheading">
+          We are with your pet every step of the way, taking extra time to understand their unique personality and
+          needs.
+        </p>
+        <a href="https://wa.me/+573143687108" class="btn-secondary">Book now!</a>
+      </div>
+
+      <div class="card-grid container">
+        <div class="photo-card">
+          <div>
+            <img src="images/why-people-love-us-1.png" alt="Yorkshire Terrier being groomed">
+          </div>
+          <p class="photo-card-caption">
+            Healthy and safe enviroment
+          </p>
+        </div>
+
+        <div class="photo-card">
+          <div>
+            <img src="images/why-people-love-us-2.png" alt="Yorkshire Terrier being groomed">
+          </div>
+          <p class="photo-card-caption">
+            High-quality and fully sterile equipment
+          </p>
+        </div>
+
+        <div class="photo-card">
+          <div>
+            <img src="images/why-people-love-us-3.png" alt="Yorkshire Terrier being groomed">
+          </div>
+          <p class="photo-card-caption">
+            Different grooming styles for your pets
+          </p>
+        </div>
+
+        <div class="photo-card">
+          <div>
+            <img src="images/why-people-love-us-4.png" alt="Yorkshire Terrier being groomed">
+          </div>
+          <p class="photo-card-caption">
+            Convenient and affordable
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-services" class="our-services section">
+      <div class="our-services-header container-small">
+        <h2 class="h2">Our services!</h2>
+        <p class="subheading">
+          For any promotional offers please visit our social media.
+        </p>
+        <div class="social-icons">
+          <a class="social-icon-link" href="https://www.facebook.com/people/Popletts-Dog-Grooming/61564858483515/"
+            target="_blank">
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+              </path>
+            </svg>
+          </a>
+          <a class="social-icon-link" href="https://www.instagram.com/popletts_grooming/" target="_blank">
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="card-grid container">
+        <div class="info-card">
+          <p class="h4">Full groom</p>
+
+          <p>
+            We use only top-quality products, offering a wide range of shampoos tailored to every coat type. Our full
+            grooming package includes a luxurious shampoo and conditioner, a haircut or styling, nail trimming, ear
+            cleaning and plucking, all topped off with a treat.
+          </p>
+
+          <div class="info-card-pricing">
+            <button class="info-card-price btn-dropdown">
+              <span>See Prices</span>
+              <svg class="info-card-price-chevron" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.616841 0.373846C0.351424 0.680096 0.351424 1.17385 0.616841 1.4801L5.11809 6.67385C5.32934 6.9176 5.67059 6.9176 5.88184 6.67385L10.3831 1.4801C10.6485 1.17385 10.6485 0.680096 10.3831 0.373846C10.1177 0.0675964 9.68976 0.0675964 9.42434 0.373846L5.49726 4.89885L1.57017 0.367596C1.31017 0.0675964 0.876841 0.0675964 0.616841 0.373846Z"
+                  fill="#E54E29" />
+              </svg>
+            </button>
+
+            <div class="info-card-prices">
+              <p>
+                <span>Small dog</span>
+                <span class="info-card-prices-amount">£25</span>
+              </p>
+              <p>
+                <span>Medium dog</span>
+                <span class="info-card-prices-amount">£35</span>
+              </p>
+              <p>
+                <span>Large dog</span>
+                <span class="info-card-prices-amount">£40</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <p class="h4">Bath & Blow-dry</p>
+
+          <p>
+            We start with a gentle wash using dog-friendly shampoo, followed by a thorough blow-dry to leave the coat
+            smooth, shiny, and healthy. This process promotes good blood circulation and reduces grease buildup. Our
+            grooming also includes a nail trim to ensure your pet's comfort.
+          </p>
+
+          <div class="info-card-pricing">
+            <button class="info-card-price btn-dropdown">
+              <span>See Prices</span>
+              <svg class="info-card-price-chevron" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0.616841 0.373846C0.351424 0.680096 0.351424 1.17385 0.616841 1.4801L5.11809 6.67385C5.32934 6.9176 5.67059 6.9176 5.88184 6.67385L10.3831 1.4801C10.6485 1.17385 10.6485 0.680096 10.3831 0.373846C10.1177 0.0675964 9.68976 0.0675964 9.42434 0.373846L5.49726 4.89885L1.57017 0.367596C1.31017 0.0675964 0.876841 0.0675964 0.616841 0.373846Z"
+                  fill="#E54E29" />
+              </svg>
+            </button>
+
+            <div class="info-card-prices">
+              <p>
+                <span>Small dog</span>
+                <span class="info-card-prices-amount">£15</span>
+              </p>
+              <p>
+                <span>Medium dog</span>
+                <span class="info-card-prices-amount">£20</span>
+              </p>
+              <p>
+                <span>Large dog</span>
+                <span class="info-card-prices-amount">£25</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <p class="h4">Microchipping</p>
+
+          <p>
+            Microchipping your pet is a fast, painless procedure that takes just seconds and doesn't require anesthesia.
+            This tiny device ensures your pet can be easily identified and returned if lost. It's also a legal
+            requirement.
+          </p>
+
+          <button class="info-card-price btn-dropdown">
+            <span>£10 each</span>
+          </button>
+        </div>
+
+        <div class="info-card">
+          <p class="h4">Puppy groom</p>
+
+          <p>
+            Ideal for introducing your puppy to grooming, this service is for dogs aged 12 to 17 weeks only. It includes
+            a bath, brush & blow-dry, ear cleaning, a gentle trim, and an introduction to clippers, all finished with a
+            treat.
+          </p>
+
+          <button class="info-card-price btn-dropdown">
+            <span>£25</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="container">
+        <img class="our-services-jack-russell" src="images/jack-russell.png" alt="Jack Russell"></img>
+      </div>
+    </section>
+
+    <div class="find-us-faq">
+      <section class="find-us-section section">
+        <div class="container find-us-container">
+          <div class="find-us-info">
+            <h2 class="h2">Find us!</h2>
+            <p>
+              20 Plumpton Walk, Bradford<br>
+              BD2 1PB
+            </p>
+            <div>
+              <p>Tuesday: 18:00 - 20:00</p>
+              <p>Wednesday: 18:00 - 20:00</p>
+              <p>Thursday: 18:00 - 20:00</p>
+              <p>Friday: 18:00 - 20:00</p>
+              <p>Saturday: 7:00 - 12:00</p>
+              <p>Sunday: 7:00 - 12:00</p>
+              <p>Monday: Closed</p>
+            </div>
+          </div>
+
+          <iframe class="find-us-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2354.8556898169595!2d-1.7473985233811782!3d53.827643072432814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487be3ec035cb0bd%3A0xdf08306ad85264f6!2s20%20Plumpton%20Walk%2C%20Bradford%20BD2%201PB!5e0!3m2!1sen!2suk!4v1726266197720!5m2!1sen!2suk"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+      <section class="faq-section section">
+        <div class="container">
+          <h2 class="h3 faqs-heading">FAQs</h2>
+
+          <div class="faqs-list">
+            <div class="faq">
+              <button class="faq-header">
+                <span>What are the terms and conditions?</span>
+                <svg class="faq-header-chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.87498 1.00001L5.99498 4.88001L2.11498 1.00001C1.92814 0.812752 1.67449 0.70752 1.40998 0.70752C1.14546 0.70752 0.891807 0.812752 0.704976 1.00001C0.314976 1.39001 0.314976 2.02001 0.704976 2.41001L5.29498 7.00001C5.68498 7.39001 6.31498 7.39001 6.70498 7.00001L11.295 2.41001C11.685 2.02001 11.685 1.39001 11.295 1.00001C10.905 0.620005 10.265 0.610005 9.87498 1.00001Z"
+                    fill="#BBC8D4" fill-opacity="0.63" />
+                </svg>
+              </button>
+              <div class="faq-body">
+                <p>Owners are required to inform their dog groomer of any known aggressive behaviour their pet may
+                  exhibit
+                  toward other animals or humans. If your dog has any allergies, please let me know prior to their
+                  grooming session. If you need to cancel an appointment, please provide at least 24 hours' notice,
+                  allowing the groomer to offer the slot to another client. By choosing Poppett's, you also agree to the
+                  filming of grooming sessions for social media marketing purposes.</p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <button class="faq-header">
+                <span>Why can't I stay with my dog while he gets groomed?</span>
+                <svg class="faq-header-chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.87498 1.00001L5.99498 4.88001L2.11498 1.00001C1.92814 0.812752 1.67449 0.70752 1.40998 0.70752C1.14546 0.70752 0.891807 0.812752 0.704976 1.00001C0.314976 1.39001 0.314976 2.02001 0.704976 2.41001L5.29498 7.00001C5.68498 7.39001 6.31498 7.39001 6.70498 7.00001L11.295 2.41001C11.685 2.02001 11.685 1.39001 11.295 1.00001C10.905 0.620005 10.265 0.610005 9.87498 1.00001Z"
+                    fill="#BBC8D4" fill-opacity="0.63" />
+                </svg>
+              </button>
+              <div class="faq-body">
+                <p>Staying with your dog might make it overexcited or anxious, which will hinder the grooming process.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <button class="faq-header">
+                <span>How do groomers get dogs to stay calm?</span>
+                <svg class="faq-header-chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.87498 1.00001L5.99498 4.88001L2.11498 1.00001C1.92814 0.812752 1.67449 0.70752 1.40998 0.70752C1.14546 0.70752 0.891807 0.812752 0.704976 1.00001C0.314976 1.39001 0.314976 2.02001 0.704976 2.41001L5.29498 7.00001C5.68498 7.39001 6.31498 7.39001 6.70498 7.00001L11.295 2.41001C11.685 2.02001 11.685 1.39001 11.295 1.00001C10.905 0.620005 10.265 0.610005 9.87498 1.00001Z"
+                    fill="#BBC8D4" fill-opacity="0.63" />
+                </svg>
+              </button>
+              <div class="faq-body">
+                <p>Groomers can relax a dog that feels anxious or nervous by speaking to them in a calm comforting tone
+                  and a treat.</p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <button class="faq-header">
+                <span>Why is grooming your dog important?</span>
+                <svg class="faq-header-chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.87498 1.00001L5.99498 4.88001L2.11498 1.00001C1.92814 0.812752 1.67449 0.70752 1.40998 0.70752C1.14546 0.70752 0.891807 0.812752 0.704976 1.00001C0.314976 1.39001 0.314976 2.02001 0.704976 2.41001L5.29498 7.00001C5.68498 7.39001 6.31498 7.39001 6.70498 7.00001L11.295 2.41001C11.685 2.02001 11.685 1.39001 11.295 1.00001C10.905 0.620005 10.265 0.610005 9.87498 1.00001Z"
+                    fill="#BBC8D4" fill-opacity="0.63" />
+                </svg>
+              </button>
+              <div class="faq-body">
+                <p>It's important to your dog's health, cleanliness and protection. It can also help prevent health
+                  issues.</p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <button class="faq-header">
+                <span>What if my dog has tics?</span>
+                <svg class="faq-header-chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.87498 1.00001L5.99498 4.88001L2.11498 1.00001C1.92814 0.812752 1.67449 0.70752 1.40998 0.70752C1.14546 0.70752 0.891807 0.812752 0.704976 1.00001C0.314976 1.39001 0.314976 2.02001 0.704976 2.41001L5.29498 7.00001C5.68498 7.39001 6.31498 7.39001 6.70498 7.00001L11.295 2.41001C11.685 2.02001 11.685 1.39001 11.295 1.00001C10.905 0.620005 10.265 0.610005 9.87498 1.00001Z"
+                    fill="#BBC8D4" fill-opacity="0.63" />
+                </svg>
+              </button>
+              <div class="faq-body">
+                <p>Please seek advice from your vet if you notice your dog has any tics.</p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <button class="faq-header">
+                <span>What if my dog has fleas?</span>
+                <svg class="faq-header-chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.87498 1.00001L5.99498 4.88001L2.11498 1.00001C1.92814 0.812752 1.67449 0.70752 1.40998 0.70752C1.14546 0.70752 0.891807 0.812752 0.704976 1.00001C0.314976 1.39001 0.314976 2.02001 0.704976 2.41001L5.29498 7.00001C5.68498 7.39001 6.31498 7.39001 6.70498 7.00001L11.295 2.41001C11.685 2.02001 11.685 1.39001 11.295 1.00001C10.905 0.620005 10.265 0.610005 9.87498 1.00001Z"
+                    fill="#BBC8D4" fill-opacity="0.63" />
+                </svg>
+              </button>
+              <div class="faq-body">
+                <p>Please check your dog does not have any fleas prior to his/her groom as we will not be able to
+                  provide
+                  our grooming service un till your dog is clear of fleas, if we find that fleas are present during the
+                  grooming service we will not be able to carry out any grooming service booked.</p>
+              </div>
+            </div>
+
+            <div class="faq">
+              <button class="faq-header">
+                <span>Should I groom my puppy?</span>
+                <svg class="faq-header-chevron" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.87498 1.00001L5.99498 4.88001L2.11498 1.00001C1.92814 0.812752 1.67449 0.70752 1.40998 0.70752C1.14546 0.70752 0.891807 0.812752 0.704976 1.00001C0.314976 1.39001 0.314976 2.02001 0.704976 2.41001L5.29498 7.00001C5.68498 7.39001 6.31498 7.39001 6.70498 7.00001L11.295 2.41001C11.685 2.02001 11.685 1.39001 11.295 1.00001C10.905 0.620005 10.265 0.610005 9.87498 1.00001Z"
+                    fill="#BBC8D4" fill-opacity="0.63" />
+                </svg>
+              </button>
+              <div class="faq-body">
+                <p>Yes puppies should be groomed to help them stay clean and healthy. The first grooming session should
+                  take place after their second round of shots, ideally between 12 and 17 weeks.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="section site-footer">
+    <img class="site-footer-logo" src="images/popletts-dog-grooming-logo.png" alt="Poplett's Dog Grooming logo">
+
+    <h2 class="site-footer-heading">Contact Us</h2>
+    <p><a href="mailto:poplettsgrooming@gmail.com">poplettsgrooming@gmail.com</a></p>
+    <p><a href="tel:+44771 334 5389">0771 334 5389</a></p>
+    <address>
+      20 Plumpton Walk, Bradford<br>
+      BD2 1PB
+    </address>
+    <div class="social-icons">
+      <a class="social-icon-link" href="https://www.facebook.com/people/Popletts-Dog-Grooming/61564858483515/"
+        target="_blank">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <path
+            d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z">
+          </path>
+        </svg>
+      </a>
+      <a class="social-icon-link" href="https://www.instagram.com/popletts_grooming/" target="_blank">
+        <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <path
+            d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z" />
+        </svg>
+      </a>
+    </div>
+    <p>
+      <span>&copy; Poplett's Dog Grooming | Website by</span>
+      <a class="site-footer-link" href="https://www.danielapinzonguzman.com">
+        Daniela Pinzon
+      </a>
+    </p>
+  </footer>
+</body>
+
+</html>

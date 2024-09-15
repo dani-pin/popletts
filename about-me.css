@@ -1,0 +1,57 @@
+body {
+  background-color: var(--colour-grey);
+}
+
+.about-me-section {
+  background-image: url(images/find-us-faq-background.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
+
+.about-me-container {
+  display: grid;
+  gap: 3rem;
+  justify-items: center;
+}
+
+.about-me-heading {
+  text-align: center;
+}
+
+.about-me-photo {
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+
+.about-me-info {
+  max-width: 765px;
+  text-align: justify;
+}
+
+.about-me-info > p:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.certifications {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.certification {
+  width: 124px;
+  height: 124px;
+  background-color: #ffffff;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+
+@media (max-width: 576px) {
+  .certifications {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
