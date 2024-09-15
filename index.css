@@ -23,6 +23,7 @@ body {
   color: var(--font-colour-body-lighter);
   padding: 0.5rem 1rem;
   text-align: center;
+  font-weight: 500;
 }
 
 .info-card {
@@ -37,7 +38,7 @@ body {
 
 .info-card-price {
   color: var(--colour-orange);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .info-card-price-chevron {
@@ -59,7 +60,7 @@ body {
 }
 
 .info-card-prices-amount {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* Hero */
