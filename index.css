@@ -219,6 +219,7 @@ body {
 
   .find-us-container {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
   .find-us-info {
