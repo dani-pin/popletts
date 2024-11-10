@@ -129,6 +129,84 @@ body {
   width: 443px;
 }
 
+/* Testimonials */
+.testimonials-section-headline {
+  text-align: center;
+}
+
+.testimonials-section-swiper {
+  position: relative;
+  margin-top: 3rem;
+  padding-bottom: 45px;
+}
+
+.testimonials-section-swiper {
+  --swiper-navigation-size: 30px;
+  --swiper-navigation-top-offset: calc(
+    100% - var(--swiper-navigation-size) / 2
+  );
+  --swiper-pagination-bottom: 0;
+  --swiper-pagination-top: auto;
+}
+
+.swiper-wrapper {
+  cursor: grab;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.google-review {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  height: 100%;
+  background-color: var(--colour-turquoise);
+  border-radius: 20px;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+.google-review-header {
+  display: flex;
+}
+
+.google-review-avatar {
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+.google-review-name {
+  font-weight: 800;
+}
+
+.google-review-stars {
+  --height: 18px;
+  --width: calc(var(--height) * 1.228);
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 23.44 19'><polygon fill='%23fbbc04' points='10,15.27 16.18,19 14.54,11.97 20,7.24 12.81,6.63 10,0 7.19,6.63 0,7.24 5.46,11.97 3.82,19'/></svg>");
+  background-size: var(--width) var(--height);
+  background-repeat: repeat-x;
+  width: calc(var(--width) * 5);
+  height: var(--height);
+}
+
+.testimonials-section-see-more {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: right;
+  text-decoration: underline;
+  vertical-align: middle;
+}
+
+.testimonial-section-see-more-arrow {
+  height: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
 /* Find us */
 .find-us-container {
   display: grid;
@@ -223,6 +301,12 @@ body {
   }
 
   .find-us-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 729px) {
+  .testimonials-section-see-more {
     text-align: center;
   }
 }

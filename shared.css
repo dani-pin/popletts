@@ -28,6 +28,11 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  width: 100%;
+}
+
 body {
   color: var(--font-colour-body);
   font: var(--font-body);
