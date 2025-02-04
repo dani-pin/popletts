@@ -4,47 +4,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poplett's Dog Grooming</title>
   <meta name="description"
     content="Professional dog grooming in Bradford, UK. Our experienced team offers gentle, affordable dog grooming services for all breeds. Book your appointment today.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
-    rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
-  <link rel="manifest" href="./manifest.json">
-  <meta name="msapplication-TileColor" content="#beded6">
-  <meta name="msapplication-TileImage" content="./ms-icon-144x144.png">
-  <meta name="theme-color" content="#beded6">
+  <title>Poplett's Dog Grooming</title>
+
+  <!-- Fonts -->
+  <link rel="preload" href="./fonts/brown-sugar.woff2" as="font" crossorigin>
+  <!-- <link rel="preload" href="./fonts/mulish-v13-latin-regular.woff2" as="font" crossorigin> -->
+  <!-- <link rel="preload" href="./fonts/mulish-v13-latin-italic.woff2" as="font" crossorigin> -->
+  <link rel="preload" href="./fonts/mulish-v13-latin-500.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/mulish-v13-latin-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="./fonts/mulish-v13-latin-700.woff2" as="font" crossorigin>
+  <!-- <link rel="preload" href="./fonts/mulish-v13-latin-800.woff2" as="font" crossorigin> -->
 
   <!-- CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" media="print"
+    onload="this.media='all'; this.onload=null;" />
   <link rel="stylesheet" href="shared.css">
-  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+      background-color: var(--colour-grey);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      margin-top: -86px;
+      display: flex;
+      align-items: center;
+      background-color: var(--colour-turquoise);
+    }
+
+    .hero-header {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      max-width: 465px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <link rel="stylesheet" href="index.css" media="print" onload="this.media='all'; this.onload=null;">
 
   <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
   <script src="shared.js" defer></script>
   <script src="index.js" defer></script>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./images/favicons/apple-icon-57x57.webp">
+  <link rel="apple-touch-icon" sizes="60x60" href="./images/favicons/apple-icon-60x60.webp">
+  <link rel="apple-touch-icon" sizes="72x72" href="./images/favicons/apple-icon-72x72.webp">
+  <link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/apple-icon-76x76.webp">
+  <link rel="apple-touch-icon" sizes="114x114" href="./images/favicons/apple-icon-114x114.webp">
+  <link rel="apple-touch-icon" sizes="120x120" href="./images/favicons/apple-icon-120x120.webp">
+  <link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/apple-icon-144x144.webp">
+  <link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/apple-icon-152x152.webp">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-icon-180x180.webp">
+  <link rel="icon" type="image/png" sizes="192x192" href="./images/favicons/android-icon-192x192.webp">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.webp">
+  <link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96x96.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.webp">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="msapplication-TileColor" content="#beded6">
+  <meta name="msapplication-TileImage" content="./ms-icon-144x144.webp">
+  <meta name="theme-color" content="#beded6">
 </head>
 
 <body>
   <nav class="site-nav-primary">
     <div class="container site-nav-container">
       <a href="./">
-        <img class="site-nav-logo" src="images/popletts-dog-grooming-logo.png" alt="Poplett's Dog Grooming logo">
+        <img class="site-nav-logo" width="384" height="172" src="images/popletts-logo-384.webp" alt="Poplett's logo">
       </a>
 
       <div class="site-nav-links">
@@ -87,9 +130,14 @@
         </p>
         <a href="https://wa.me/+447713345389" target="_blank" class="btn-primary">Schedule a visit</a>
       </div>
+
+      <img class="hero-bg" aria-hidden="true" alt="Dogs with soap and bubbles" width="720" height="386"
+        src="images/hero-bg-720.webp"
+        srcset="images/hero-bg-720.webp 720w, images/hero-bg-1440.webp 1440w, images/hero-bg-2880.webp 2880w"
+        sizes="100vw">
     </section>
 
-    <section class="why-people-love-us section">
+    <section class="why-people-love-us section" data-bg-img="images/why-people-love-us-background.webp">
       <div class="why-people-love-us-header container-small">
         <h2 class="h2">Why people love us</h2>
         <p class="subheading">
@@ -102,7 +150,11 @@
       <div class="card-grid container">
         <div class="photo-card">
           <div>
-            <img src="images/why-people-love-us-1.png" alt="Yorkshire Terrier being groomed">
+            <img alt="Yorkshire Terrier being groomed" width="565" height="340"
+              src="images/why-people-love-us-1-565.webp"
+              srcset="images/why-people-love-us-1-565.webp 565w, images/why-people-love-us-1-1130.webp 1130w"
+              sizes="(min-width: 1163px) 549.5px, (min-width: 815px) 50vw, (min-width: 597px) 565px, 110vw"
+              loading="lazy" decoding="async">
           </div>
           <p class="photo-card-caption">
             Healthy and safe enviroment
@@ -111,7 +163,10 @@
 
         <div class="photo-card">
           <div>
-            <img src="images/why-people-love-us-2.png" alt="Yorkshire Terrier being groomed">
+            <img alt="Dog having its nails clipped" width="565" height="340" src="images/why-people-love-us-2-565.webp"
+              srcset="images/why-people-love-us-2-565.webp 565w, images/why-people-love-us-2-1130.webp 1130w"
+              sizes="(min-width: 1163px) 549.5px, (min-width: 815px) 50vw, (min-width: 597px) 565px, 110vw"
+              loading="lazy" decoding="async">
           </div>
           <p class="photo-card-caption">
             High-quality and fully sterile equipment
@@ -120,7 +175,10 @@
 
         <div class="photo-card">
           <div>
-            <img src="images/why-people-love-us-3.png" alt="Yorkshire Terrier being groomed">
+            <img alt="Dog having a hair cut" width="565" height="340" src="images/why-people-love-us-3-565.webp"
+              srcset="images/why-people-love-us-3-565.webp 565w, images/why-people-love-us-3-1130.webp 1130w"
+              sizes="(min-width: 1163px) 549.5px, (min-width: 815px) 50vw, (min-width: 597px) 565px, 110vw"
+              loading="lazy" decoding="async">
           </div>
           <p class="photo-card-caption">
             Different grooming styles for your pets
@@ -129,7 +187,11 @@
 
         <div class="photo-card">
           <div>
-            <img src="images/why-people-love-us-4.png" alt="Yorkshire Terrier being groomed">
+            <img alt="Springer Spaniel eating a treat" width="565" height="340"
+              src="images/why-people-love-us-4-565.webp"
+              srcset="images/why-people-love-us-4-565.webp 565w, images/why-people-love-us-4-1130.webp 1130w"
+              sizes="(min-width: 1163px) 549.5px, (min-width: 815px) 50vw, (min-width: 597px) 565px, 110vw"
+              loading="lazy" decoding="async">
           </div>
           <p class="photo-card-caption">
             Convenient and affordable
@@ -138,7 +200,7 @@
       </div>
     </section>
 
-    <section id="our-services" class="our-services section">
+    <section id="our-services" class="our-services section" data-bg-img="images/our-services-background.webp">
       <div class="our-services-header container-small">
         <h2 class="h2">Our services!</h2>
         <p class="subheading">
@@ -262,7 +324,10 @@
       </div>
 
       <div class="container">
-        <img class="our-services-jack-russell" src="images/jack-russell.png" alt="Jack Russell"></img>
+        <img class="our-services-jack-russell" alt="Jack Russell" width="443" height="398.88"
+          src="images/jack-russell-443.webp"
+          srcset="images/jack-russell-443.webp 443w, images/jack-russell-886.webp 886w"
+          sizes="(min-width: 475px) 443px, 100vw" loading="lazy" decoding="async" />
       </div>
     </section>
 
@@ -275,7 +340,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a/ACg8ocIHuZ4mgPIE1wjN2ChDYsAGgOFFfZqdhlEUvcOz2AN9iDgoFA=s40-c-rp-mo-br100"
                     alt="Mikey Brooks">
                   <p class="google-review-name">Mikey Brooks</p>
@@ -292,7 +357,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a/ACg8ocILaOn4TlM7mxe9BLYM38HC9t5100QnuelgpEf8USrKkoIdrQ=s40-c-rp-mo-br100"
                     alt="Danielle Blackmore">
                   <p class="google-review-name">Danielle Blackmore</p>
@@ -308,7 +373,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a/ACg8ocKvHn3wnRGcI0f1mZULlPlPQFK8rFziLBk2E6sirelql-UFKA=s40-c-rp-mo-br100"
                     alt="Gabrielle Reinbergs">
                   <p class="google-review-name">Gabrielle Reinbergs</p>
@@ -326,7 +391,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a/ACg8ocJGQ_IB142mjRhU6M47gTnNTnj8u5k7riLKjd_z3E-bN4IRdQ=s40-c-rp-mo-br100"
                     alt="Daniela Smith1998">
                   <p class="google-review-name">Daniela Smith1998</p>
@@ -342,7 +407,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a/ACg8ocL1MFwmBXhdb6--MPwEBV1NTUjBIBzjMCZVpoVh5Yr4SM3Dfg=s40-c-rp-mo-br100"
                     alt="Richard Worby">
                   <p class="google-review-name">Richard Worby</p>
@@ -358,7 +423,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a/ACg8ocI-9nZTfEAvRAU0ntQpFS2yDXQyRziEDXvnLEXKYa2ZEFGr3Q=s40-c-rp-mo-br100"
                     alt="Laura Brickley">
                   <p class="google-review-name">Laura Brickley</p>
@@ -372,7 +437,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a-/ALV-UjXKXncLyobXnirI8jun6XgHCL7iwrUQ8x7ybHMYxeYsuxwYJ0q3wQ=s40-c-rp-mo-br100"
                     alt="Stacey Read">
                   <p class="google-review-name">Stacey Read</p>
@@ -388,7 +453,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a-/ALV-UjXH0Grac_eoFNg_xcquS_-Vi8uyTEIXso-T53q_-D7nnQC8X2GdTg=s40-c-rp-mo-br100"
                     alt="Daniela Pinzon Guzman">
                   <p class="google-review-name">Daniela Pinzon Guzman</p>
@@ -404,7 +469,7 @@
             <div class="swiper-slide">
               <div class="google-review">
                 <div class="google-review-header">
-                  <img class="google-review-avatar"
+                  <img class="google-review-avatar" width="40" height="40" loading="lazy" decoding="async"
                     src="https://lh3.googleusercontent.com/a/ACg8ocKXZJirr2_TikVCw8CZ9hnhFysWbzDSgGr4JaAVIbBKGPqqQg=s40-c-rp-mo-br100"
                     alt="James Firth">
                   <p class="google-review-name">James Firth</p>
@@ -440,7 +505,7 @@
       </p>
     </section>
 
-    <div class="find-us-faq">
+    <div class="find-us-faq" data-bg-img="images/find-us-faq-background.webp">
       <section class="find-us-section section">
         <div class="container find-us-container">
           <div class="find-us-info">
@@ -587,7 +652,8 @@
   </main>
 
   <footer id="site-footer" class="section site-footer">
-    <img class="site-footer-logo" src="images/popletts-dog-grooming-logo.png" alt="Poplett's Dog Grooming logo">
+    <img class="site-footer-logo" width="384" height="172" src="images/popletts-logo-384.webp" alt="Poplett's logo"
+      loading="lazy" decoding="async">
 
     <h2 class="site-footer-heading">Contact Us</h2>
     <p><a href="mailto:poplettsgrooming@gmail.com">poplettsgrooming@gmail.com</a></p>

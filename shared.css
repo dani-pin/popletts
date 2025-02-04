@@ -1,8 +1,59 @@
+/* brown-sugar-regular */
 @font-face {
-  font-family: "Brown Sugar";
-  src: url("./fonts/brown-sugar.woff2") format("woff2"),
-    url("/fonts/brown-sugar.woff") format("woff"),
-    url("./fonts/brown-sugar.ttf") format("truetype");
+  font-display: swap;
+  font-family: 'Brown Sugar';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/brown-sugar.woff2') format('woff2');
+}
+
+/* mulish-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/mulish-v13-latin-regular.woff2') format('woff2');
+}
+/* mulish-italic - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Mulish';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./fonts/mulish-v13-latin-italic.woff2') format('woff2');
+}
+/* mulish-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/mulish-v13-latin-500.woff2') format('woff2');
+}
+/* mulish-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/mulish-v13-latin-600.woff2') format('woff2');
+}
+/* mulish-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/mulish-v13-latin-700.woff2') format('woff2');
+}
+/* mulish-800 - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./fonts/mulish-v13-latin-800.woff2') format('woff2');
 }
 
 :root {
@@ -11,8 +62,8 @@
   --colour-orange: #e54e29;
   --colour-grey: #e6e6e6;
 
-  --font-family-heading: "Brown Sugar", sans-serif;
-  --font-family-body: "Mulish", sans-serif;
+  --font-family-heading: 'Brown Sugar', sans-serif;
+  --font-family-body: 'Mulish', sans-serif;
 
   --font-body: 1.25rem/163.2% var(--font-family-body);
   --font-colour-body: rgba(53, 52, 57, 0.85);
@@ -190,6 +241,11 @@ address {
 }
 
 /* Site nav */
+.site-nav-primary {
+  position: relative;
+  z-index: 100;
+}
+
 .site-nav-container {
   display: flex;
   align-items: center;
@@ -197,7 +253,9 @@ address {
 }
 
 .site-nav-logo {
-  height: 86px;
+  width: 192px;
+  height: auto;
+  max-width: 50vw;
 }
 
 .site-nav-links {
@@ -309,6 +367,7 @@ address {
 
 .site-footer-logo {
   width: 150px;
+  height: auto;
 }
 
 .site-footer-heading {
