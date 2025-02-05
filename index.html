@@ -131,10 +131,13 @@
         <a href="https://wa.me/+447713345389" target="_blank" class="btn-primary">Schedule a visit</a>
       </div>
 
-      <img class="hero-bg" aria-hidden="true" alt="Dogs with soap and bubbles" width="720" height="386"
-        src="images/hero-bg-720.webp"
-        srcset="images/hero-bg-720.webp 720w, images/hero-bg-1440.webp 1440w, images/hero-bg-2880.webp 2880w"
-        sizes="100vw">
+      <picture>
+        <source media="(min-width: 431px)"
+          srcset="images/hero-bg-720.webp 720w, images/hero-bg-1440.webp 1440w, images/hero-bg-2880.webp 2880w"
+          sizes="100vw">
+        <img class="hero-bg" alt="Dogs with soap and bubbles" width="430" height="932"
+          srcset="images/hero-bg-m-430.webp 430w, images/hero-bg-m-860.webp 860w" sizes="100vw">
+      </picture>
     </section>
 
     <section class="why-people-love-us section" data-bg-img="images/why-people-love-us-background.webp">
